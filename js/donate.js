@@ -1,19 +1,16 @@
-// document.getElementById('donation-btn').addEventListener('click', function () {
-//     this.classList.add('bg-btn');
-//     getId('history-btn').classList.remove('bg-btn');
-//     showSection('donation');
-// })
-// document.getElementById('history-btn').addEventListener('click', function () {
-//     this.classList.add('bg-btn');
-//     getId('donation-btn').classList.remove('bg-btn');
-//     showSection('history');
-// })
+document.getElementById('donation-btn').addEventListener('click', function () {
+    getHtmlElementId('donation-btn').classList.add('bg-btn');
+    getHtmlElementId('history-btn').classList.remove('bg-btn');
+    showSection('donation');
+})
+document.getElementById('history-btn').addEventListener('click', function () {
+    getHtmlElementId('history-btn').classList.add('bg-btn');
+    getHtmlElementId('donation-btn').classList.remove('bg-btn');
+    showSection('history');
+})
 
 
-
-
-
-
+// Noakhali donate start
 
 document.getElementById('noakhali-btn').addEventListener('click',function(){
     
@@ -81,7 +78,7 @@ document.getElementById('noakhali-btn').addEventListener('click',function(){
          const div=document.createElement('div');
          const date = new Date();
          div.classList.add('border-2','rounded-xl','border-neutral-200','p-8','my-6')
-         div.innerHTML=`<h1 class="font-bold text-xl mb-4">${donateAmount} Taka is Donated for famine-2024 at Noakhali, Bangladesh</h1> <p class="text-base text-neutral-500">${date}</p>`;
+         div.innerHTML=`<h1 class="font-bold text-xl mb-4">${donateAmount} Taka is Donated for Flood Relief in Feni,Bangladesh</h1> <p class="text-base text-neutral-500">${date}</p>`;
          donateHistory.appendChild(div);
     })
 
@@ -116,6 +113,6 @@ document.getElementById('noakhali-btn').addEventListener('click',function(){
          const div=document.createElement('div');
          const date = new Date();
          div.classList.add('border-2','rounded-xl','border-neutral-200','p-8','my-6')
-         div.innerHTML=`<h1 class="font-bold text-xl mb-4">${donateAmount} Taka is Donated for famine-2024 at Noakhali, Bangladesh</h1> <p class="text-base text-neutral-500">${date}</p>`;
+         div.innerHTML=`<h1 class="font-bold text-xl mb-4">${donateAmount} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1> <p class="text-base text-neutral-500">${date}</p>`;
          donateHistory.appendChild(div);
     }) 
